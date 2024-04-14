@@ -53,6 +53,10 @@ vertical-align: middle;
 text-align:right;
 }
 
+.align-left {
+    text-align: left;
+}
+
 .flex {
     display: flex;
     align-items: flex-end;
@@ -96,6 +100,11 @@ text-align:right;
     margin-bottom: 8px;
 }
 
+#banner {
+    background: url(images/image7.png) no-repeat center;
+    background-size: cover;
+}
+
 #menu{
 
 }
@@ -104,18 +113,18 @@ text-align:right;
 
 }
 
-#menu ulink {
+#menu ul {
 padding:0;
 margin:0;
 list-style: none;
 }
 
-#menu ulink li {
+#menu ul li {
 display:inline;
 margin-left:15px;
 }
 
-    #menu ulink li a {
+    #menu ul li a {
         color: #324950;
         font-size: 18px;
         font-weight: bold;
@@ -123,11 +132,11 @@ margin-left:15px;
         transition: color 0.3s ease, font-size 0.3s ease, transform 0.3s ease;
     }
 
-        #menu ulink li a:hover {
+        #menu ul li a:hover {
             color: #57984C;
         }
 
-        #menu ulink li a:active {
+        #menu ul li a:active {
             font-size: 20px;
             transform: scale(1.2);
         }
@@ -158,10 +167,6 @@ margin-left:15px;
         text-decoration:none;
         line-height: 55px;
     }
-
-.content h1 {
-    font-family: 'Times new roman', serif;
-}
 
 .content a {
     font-family: 'Roboto', serif;
@@ -266,8 +271,8 @@ margin-left:15px;
 }
 
 .mes1 {
-    font-family: 'Times new roman', serif;
-    color: #1b7413;
+    font-family: 'Roboto', serif;
+    color: #324950;
     font-size: 64px;
     margin: 0;
 }
@@ -278,11 +283,38 @@ margin-left:15px;
 }
 
 .mes3 {
-    font-family: 'Times new roman', serif;
-    color: #1b7413;
+    font-family: 'Roboto', serif;
+    color: #324950;
     font-size: 20px;
 }
 
+.mes4 {
+    font-family: 'Roboto', serif;
+    color: #324950;
+    font-size: 44px;
+}
+
+.mes5 {
+    font-family: 'Roboto', serif;
+    color: #324950;
+    font-size: 17px;
+}
+
+.t1 {
+    font-family: 'Roboto', serif;
+    color: #57984C;
+    font-size: 20px;
+    text-align:center;
+    margin: 2px 0px 2px 0px;
+}
+
+.t2{
+    font-family: 'Roboto', serif;
+    color: #57984C;
+    font-size:16px;
+    text-align: center;
+    margin: 2px 0px 2px 0px;
+}
 
 
 #osnova {
@@ -361,18 +393,18 @@ margin-left:15px;
     
 
 
-#Сonnexions ulink {
+#Сonnexions ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-    #Сonnexions ulink li {
+    #Сonnexions ul li {
         display: inline;
         margin-left: 2em;
     }
 
-        #Сonnexions ulink li a {
+        #Сonnexions ul li a {
             color: #ffffff;
             font-size: 16px;
             text-decoration: none;
@@ -411,7 +443,7 @@ img {
         justify-content: center;
     }
 
-    #Сonnexions ulink li {
+    #Сonnexions ul li {
         margin-left: 0;
         margin-bottom: 5px;
     }
@@ -426,3 +458,150 @@ img {
     width: 100%;
 }
 
+#base{
+    background-color: #FCF0F0;
+}
+
+.textbox {
+    display: block;
+    background-color: #FFFAFA;
+    font-family:Roboto;
+    width:1152px;
+    height:250px;
+    margin:0 auto;
+}
+
+.tb1 {
+    display: block;
+    width: 350px;
+    font-family: Roboto;
+    color: #324950;
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+}
+
+.ah {
+    text-align:left;
+    width: 350px;
+    color: #324950;
+}
+
+.bh {
+    border-top: 1px solid #57984C; 
+    text-align: left;
+    width: 183px;
+    margin-left: 0px;
+}
+
+.tb2 {
+    display: block;
+    width: 350px;
+    font-family: Roboto;
+    color: #324950;
+    font-size: 17px;
+    margin: 20px 0 0 20px;
+}
+
+.header {
+
+}
+
+.g1 {
+    font-family: Roboto;
+    color: #57984C;
+    font-size: 14px;
+}
+
+.g2 {
+    width: 526px;
+    font-family: Roboto;
+    color: #57984C;
+    font-size: 54px;
+}
+
+.g3 {
+    font-family: Roboto;
+    color: #57984C;
+    font-size: 20px;
+    text-align:left;
+}
+
+.r1 {
+    width: 438px;
+    font-family: Roboto;
+    color: #CF2333;
+    font-size: 30px;
+}
+.container {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.pdf {
+    display: flex;
+    justify-content: end;
+    margin: 25px 0 40px 0;
+}
+
+.pdf a {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        background-image: url(../images/Btn_pdf.png);
+        background-repeat: no-repeat;
+        background-position: 20px 10px;
+        width: 155px;
+        height: 51px;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px 0px;
+        color: #57984C;
+        font-size: 17px;
+        font-weight: bold;
+        border: 2px solid #57984C;
+        border-radius: 30px;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 70px;
+}
+
+.image {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.image2 {
+    flex-shrink: 0;
+    margin-top:20px;
+    margin-left: 330px;
+}
+
+.full-width-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn-img {
+    width: 225px;
+    height:55px;
+    text-align:right;
+}
+.product-img {
+    width: 350px;
+    height: 321px;
+}
+
+.product-box {
+    background-color: white;
+    margin: 20px 21px 2px 5px;
+}
+
+#product-base {
+    background-color: #F7F7F7;
+}
