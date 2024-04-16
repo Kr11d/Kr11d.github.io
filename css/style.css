@@ -300,6 +300,13 @@ margin-left:15px;
     font-size: 17px;
 }
 
+.mes6 {
+    margin:5px;
+    font-family: 'Roboto', serif;
+    color: #324950;
+    font-size: 17px;
+}
+
 .t1 {
     font-family: 'Roboto', serif;
     color: #57984C;
@@ -463,6 +470,10 @@ img {
     background-color: #FCF0F0;
 }
 
+#contact_base {
+    background-color: #DADADA;
+}
+
 .textbox {
     display: block;
     background-color: #FFFAFA;
@@ -511,7 +522,6 @@ img {
     font-family: Roboto;
     color: #57984C;
     font-size: 14px;
-    text-decoration:none;
 }
 
 .g2 {
@@ -526,6 +536,13 @@ img {
     color: #57984C;
     font-size: 20px;
     text-align:left;
+}
+
+.g4 {
+    padding:20px 0 0 0;
+    font-family: Roboto;
+    color: #57984C;
+    font-size: 20px;
 }
 
 .r1 {
@@ -546,10 +563,6 @@ img {
     width: 100%;
 }
 
-.container a{
-        text-decoration: none;
-        color: #57984C;
-}
 .pdf {
     display: flex;
     justify-content: end;
@@ -607,10 +620,99 @@ img {
     background-color: white;
     margin: 20px 21px 2px 5px;
 }
+
 .product-box a {
         text-decoration: none;
         color: #57984C;
 }
+
 #product-base {
-    background-color: #F7F7F7;
+    background-color: lightgray;
+}
+
+#body_contact {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.container3 {
+    margin: 50px auto;
+    border: 0px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    height:55px;
+    width: 350px;
+    padding: 10px;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+#button_send {
+    background-color: #57984C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    height: 55px;
+    width: 255px;
+    font-size: 17px;
+}
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+
+.interested {
+    width: 635px;
+    height: 355px;
+}
+
+#other_input {
+    width: 635px;
+}
+
+#Who {
+    border-radius: 10px;
+    border-color:#ccc;
+    border: 0px;
+    font-family:Roboto;
+    width:635px;
+    height:55px;
+    font-size:17px;
+}
+
+#contact_hooter {
+    background-color:white;
+    text-align:center;
+    padding:0 0 10px 0;
+}
+
+#Phone {
+    text-decoration:none;
+    color: #57984C;
 }

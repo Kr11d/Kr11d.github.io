@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo&display=swap">
+    <link rel="stylesheet" href="/css/style.css">
+    <TITLE>Homepage</TITLE>
+</HEAD>
+<BODY id="body_contact">
+    <div class="header">
+        <div class="wrapper">
+            <div class="row">
+                <div class="w-2">
+                    <div id="logo">
+                        <img src="images/Logo.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="w-2 align-right">
+                    <div id="search">
+                        <div id="search-in" class="flex">
+                            <input type="text" placeholder="Search">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Company Profile</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">R&D</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product_base">
+        <div id="banner">
+            <img src="images/Contact_us.jpg" class="full-width-img">
+        </div>
+        <div class="wrapper">
+            <h1 class="mes4">Contact us</h1>
+            <p class="mes2">×××××</p>
+            <div class="container3">
+                <form action="submit.php" method="post">
+                    <div class="row">
+                        <div class="w-2">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="position">Position</label>
+                                <input type="text" id="position" name="position">
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telephone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="w-2">
+                            <div class="form-group">
+                                <label>You are a</label>
+                                <select name="Who" id="Who">
+                                    <option value="seed_producer">Seed producer</option>
+                                    <option value="professional">Professional</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="other_text">If other, please specify</label>
+                                <input type="text" id="other_input" name="other_text">
+                            </div>
+                            <div class="form-group">
+                                <label for="interested">What are you interested in?</label>
+                                <input type="text" class="interested" id="interested" name="interested">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" id="button_send">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="contact_hooter">
+            <p class="g4">Our Address</p>
+            <p class="mes6">AGRIDERA Seeds & Agriculture Ltd.</p>
+            <p class="mes6">P.O Box 103,</p>
+            <p class="mes6">Gederf 70750, Israel.</p>
+            <p class="mes6">Telephone: <a href="tel:+972 8 944 9222" id="Phone">+972 8 944 9222</a></p>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer_section">
+            <div id="Сonnexions">
+                <ul>
+                    <li><a href="">PROFILE</a></li>
+                    <li><a href="">MANAGEMENT</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">R&D</a></li>
+                    <li><a href="">LINKS</a></li>
+                    <li><a href="">SITEMAP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="social_media">
+                <a href=""><img src="images/in.png" alt="IN"></a>
+                <a href=""><img src="images/inst.png" alt="INSTAGRAM"></a>
+                <a href=""><img src="images/tube.png" alt="YOUTUBE"></a>
+                <a href=""><img src="images/tw.png" alt="TWITTER"></a>
+                <a href=""><img src="images/fb.png" alt="FACEBOOK"></a>
+            </div>
+        </div>
+        <p>AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</p>
+    </div>
+</BODY>
+</html>
