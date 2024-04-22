@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo&display=swap">
-    <link rel="stylesheet" href="css/style.css">
-    <TITLE>Products</TITLE>
+    <link rel="stylesheet" href="/css/tamplate.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="/js/main.js">
+    <TITLE>Oranges</TITLE>
 </HEAD>
 <BODY>
     <div class="header">
@@ -42,7 +44,7 @@
     <div class="content">
         <div id="base">
             <div id="banner">
-                <img src="images/image7.png" class="full-width-img">
+                <img src="images/oranges_banner.png" class="full-width-img">
             </div>
             <div class="wrapper">
                 <h1 class="mes4">Angridia Fresh Market Tomato hybrids</h1>
@@ -77,70 +79,46 @@
                     <img src="images/Rectangle 27.png"  class="image">
                     <p class="mes5"><b>Agirdera operators through international and local distibutes around the world.</b></p>
                 </div>
-                <div class="row">
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
+                <article id="app">
+                    <div v-for="(product, index) in chunkedProducts" :key="index">
+                        <div class="product" v-for="(item, i) in product" :key="i">
+                            <img :src="item.image" alt="Product Image">
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.short_text }}</p>
+                            <button class="orange-button" @click="addItem(item.id)">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                    <div class="w-3">
-                        <div class="product-box">
-                            <a href="https://kr11d.github.io/tomato_one.html"><img src="images/image 3.jpg" class="product-img"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html"><b>TAG 1000(TAG 853)</b></a></p>
-                            <p class="t2">Tomato Determinate Red Standard Round</p>
-                        </div>
-                    </div>
-                    <div class="w-3">
-                    </div>
-                </div>
+                </article>
+
+                <script>
+                    var app = new Vue({
+                        el: "#app",
+                        data: {
+                            products: [
+                                { id: 1, title: "Navel Oranges", short_text: 'The navel orange is a sweet type of orange', image: 'images/orange1.png', desc: "Full desc" },
+                                { id: 2, title: "Cara Cara Oranges", short_text: 'A type of navel orange and also seedless and sweet', image: 'images/orange2.png', desc: "Full desc" },
+                                { id: 3, title: "Valencia Oranges", short_text: 'Valencia oranges are sweet and extremely juicy', image: 'images/orange3.png', desc: "Full desc" },
+                                { id: 4, title: "Mandarin Orange", short_text: 'They are small, have a medium to thick loosely adherent rind', image: 'images/orange4.png', desc: "Full desc" },
+                                { id: 5, title: "Clementines", short_text: 'Known for their small size and easy-to-peel bright orange skin', image: 'images/orange5.png', desc: "Full desc" }
+                            ]
+                        },
+                        computed: {
+                            chunkedProducts: function () {
+                                var chunkSize = 3;
+                                var chunkedArray = [];
+                                for (var i = 0; i < this.products.length; i += chunkSize) {
+                                    chunkedArray.push(this.products.slice(i, i + chunkSize));
+                                }
+                                return chunkedArray;
+                            }
+                        },
+                        methods: {
+                            addItem: function (id) {
+                                window.localStorage.setItem('prod', id);
+                            }
+                        }
+                    });
+                </script>
                 <br/>
             </div>
         </div>
