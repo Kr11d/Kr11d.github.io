@@ -82,8 +82,8 @@
                     <div v-for="(product, index) in chunkedProducts" :key="index">
                         <div class="product" v-for="(item, i) in product" :key="i">
                             <a href="https://kr11d.github.io/tomato_one.html"><img :src="item.image" alt="Product Image"></a>
-                            <p class="t1"><a href="https://kr11d.github.io/tomato_one.html">{{ item.title }}</a></p>
-                            <p class="t2">{{ item.short_text }}</p>
+                            <p class="t1">{{ item.title }}</p>
+                            <p>{{ item.short_text }}</p>
                             <button class="orange-button" @click="addItem(item.id)">Add to Cart</button>
                         </div>
                     </div>
