@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo&display=swap">
     <link rel="stylesheet" href="/css/tamplate.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <link rel="stylesheet" href="/js/main.js">
-    <TITLE>TAG 1002</TITLE>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <TITLE>Product</TITLE>
 </HEAD>
 <BODY>
     <div class="header">
@@ -48,57 +47,38 @@
                         <img src="images/Arrow 1.png" class="image">
                         <p class="g1"><a href="https://kr11d.github.io/tomato_all.html">Return to all tomatoes</a></p>
                     </div>
-                    <div class="row">
-                        <div class="w-2">
-                            <h1 class="g2"><b>TAG 1002 (TAG 809) Tomato Determinate Red Standard Round</b></h1>
-                            <p class="mes2">×××××</p>
-                            <div class="container">
-                                <img src="images/Group 17.png" class="image">
-                                <p class="r1"><b>Very high yield and excellent fruits quality!</b></p>
+                 <article id="app">
+                    <div class="product">
+                        <div class="row">
+                            <div class="w-2">
+                                <h1 class="g2">{{product.title}}</h1>
+                                <p class="mes2">×××××</p>
+                                <div class="container">
+                                    <img src="images/Group 17.png" class="image">
+                                    <p class="r1"><b>Very high yield and excellent fruits quality!</b></p>
+                                </div>
+                                <p class="g3"><b>CHARACTERISTICS</b></p>
+                                <p class="g3"><hr class="bh"></p>
+                                <p class="mes5">{{product.desc}}</p>
                             </div>
-                            <p class="g3"><b>CHARACTERISTICS</b></p>
-                            <p class="g3"><hr class="bh"></p>
-                            <p class="mes5"><b>Resistance</b></p>
-                            <p class="mes5">HR:ToMV:0-2;Fol:1.2;Ve/Vd;</p>
-                            <p class="mes5">IR: TYLCV</p>
-                            <p class="g3"><b>Plant</b></p>
-                            <p class="g3"><hr class="bh"></p>
-                            <ul class="mes5">
-                                <li>Strong vigor that provides good leaf coverage.</li>
-                                <li>Very high productivity with good fruit setting.</li>
-                                <li>Early matured variety.</li>
-                            </ul>
-                            <p class="g3"><b>Fruit</b></p>
-                            <p class="g3"><hr class="bh"></p>
-                            <ul class="mes5">
-                                <li>Long shelf life on plant and post harvest. </li>
-                                <li>Nice shiny attractive deep red color. </li>
-                                <li>Average fruit size: 140 - 160 grams. </li>
-                            </ul>
-                        </div>
-
-                        <div class="w-2">
-                            <img src="images/image 3.jpg" class="full-width-img">
-                            <div class="pdf">
-                                <a href="#">Download pdf</a>
+                            <div class="w-2">
+                                <img :src="product.image" alt="Product Image" class="full-width-img">
+                                <div class="add">
+                                    <a href="#" @click.prevent="addToCart(product.id)" v-if="!btnVisible">Add to cart</a>
+                                </div>
+                                <div class="add">
+                                    <a href="https://kr11d.github.io/contact_us.html" v-if="btnVisible">Go to cart</a>
+                                </div>
                             </div>
-                            <p class="g3"><b>Cycle</b></p>
-                            <p class="g3"><hr class="bh"></p>
-                            <ul class="mes5">
-                                <li>Long shelf life on plant and post harvest. </li>
-                                <li>Nice shiny attractive deep red color. </li>
-                                <li>Average fruit size: 140 - 160 grams. </li>
-                            </ul>
-                            <p class="g3"><b>Color</b></p>
-                            <p class="g3"><hr class="bh"></p>
-                            <p class="mes5">Red</p>
                         </div>
                     </div>
+                </article>
+                    
                 <br />
             </div>
         </div>
     </div>
-
+    <script src="js/main.js"></script>
 
     <div class="footer">
         <div class="footer_section">
